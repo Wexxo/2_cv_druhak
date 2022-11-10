@@ -1,0 +1,198 @@
+using System;
+
+namespace Ukol
+{
+
+  class Ovce
+    {
+        string jméno;
+        int váha;
+        int id;
+        string typ_chovu;
+        public Ovce(string Jméno, int Váha, int ID, string Typ_chovu)
+        {
+            jméno = Jméno;
+            váha = Váha;
+            id = ID;
+            typ_chovu = Typ_chovu;
+        }
+        public void Zvuk()
+        {
+            Console.WriteLine("CHNOCHNOCHNOCHNO");
+        }
+        public void Vypis()
+        {
+            Console.WriteLine(jméno);
+            Console.WriteLine(váha);
+            Console.WriteLine(id);
+            Console.WriteLine(typ_chovu);
+        }
+        public void Prejmenuj()
+        {
+            Console.WriteLine("pro prejmenovani stiskni 1");
+            int prejmen = int.Parse(Console.ReadLine());
+            if (prejmen == 1)
+            {
+                Console.WriteLine("nove jmeno kravy");
+                string novejmeno = Console.ReadLine();
+                Console.WriteLine("jemno je " + novejmeno);
+            }
+            else if (prejmen == 2)
+            {
+                Console.WriteLine("Jmeno zustava");
+            }
+        }
+    }
+
+    class Prase
+    {
+        string jméno;
+        int váha;
+        int id;
+        string typ_chovu;
+        public Prase(string Jméno, int Váha, int ID, string Typ_chovu)
+        {
+            jméno = Jméno;
+            váha = Váha;
+            id = ID;
+            typ_chovu = Typ_chovu;
+        }
+        public void Zvuk()
+        {
+            Console.WriteLine("CHNOCHNOCHNOCHNO");
+        }
+        public void Vypis()
+        {
+            Console.WriteLine(jméno);
+            Console.WriteLine(váha);
+            Console.WriteLine(id);
+            Console.WriteLine(typ_chovu);
+        }
+        public void Prejmenuj()
+        {
+            Console.WriteLine("pro prejmenovani stiskni 1");
+            int prejmen = int.Parse(Console.ReadLine());
+            if (prejmen == 1)
+            {
+                Console.WriteLine("nove jmeno kravy");
+                string novejmeno = Console.ReadLine();
+                Console.WriteLine("jemno je " + novejmeno);
+            }
+            else if(prejmen == 2)
+            {
+                Console.WriteLine("Jmeno zustava");
+            }
+        }
+    }
+    class Kráva
+    {
+        string jméno;
+        int váha;
+        int id;
+        string typ_chovu;
+        public Kráva(string Jméno, int Váha, int ID, string Typ_chovu)
+        {
+            jméno = Jméno;
+            váha = Váha;
+            id = ID;
+            typ_chovu = Typ_chovu;
+        }
+        public void Zvuk()
+        {
+            Console.WriteLine("BUUUUU");
+        }
+        public void Vypis()
+        {
+            Console.WriteLine(jméno);
+            Console.WriteLine(váha);
+            Console.WriteLine(id);
+            Console.WriteLine(typ_chovu);
+        }
+        public void Prejmenuj()
+        {
+            Console.WriteLine("pro prejmenovani stiskni 1");
+            int prejmen = int.Parse(Console.ReadLine());
+            if (prejmen == 1)
+            {
+                Console.WriteLine("nove jmeno kravy");
+                string novejmeno = Console.ReadLine();
+                Console.WriteLine("jemno je " + novejmeno);
+            }
+            else if (prejmen == 2)
+            {
+                Console.WriteLine("Jmeno zustava");
+            }
+        }
+
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Kráva krava_tupa = new Kráva("Kremlina", 150, 1 , "mleko" );
+            Kráva krava_hlupa = new Kráva("Gandalfice", 100, 2, "mleko");
+            Kráva krava_velka = new Kráva("Krompomdom", 220, 3, "mleko");
+            Prase prase_tluste = new Prase("Gordonblu", 60, 1, "maso");
+            Prase prase_tlustejsi = new Prase("Prasklinka", 80, 2, "maso");
+            Prase prase_nejtlustejsi = new Prase("Gucci", 30, 3, "maso");
+            Ovce ovce_male = new Ovce("Pepa", 30, 1, "Vlnu");
+            Ovce ovce_vetsi = new Ovce("Trompil", 40, 2, "Vlnu");
+            Ovce ovce_nejvetsi = new Ovce("Robert", 28, 3, "Vlnu");
+
+            krava_tupa.Zvuk();
+            krava_tupa.Prejmenuj();
+            krava_tupa.Vypis();
+            Console.WriteLine("     ");
+
+            krava_hlupa.Zvuk();
+            krava_hlupa.Prejmenuj();
+            krava_hlupa.Vypis();
+            Console.WriteLine("     ");
+
+            krava_velka.Zvuk();
+            krava_velka.Prejmenuj();
+            krava_velka.Vypis();
+            Console.WriteLine("     ");
+
+            prase_tluste.Zvuk();
+            prase_tluste.Prejmenuj();
+            prase_tluste.Vypis();
+            Console.WriteLine("     ");
+
+            prase_tlustejsi.Zvuk();
+            prase_tlustejsi.Prejmenuj();
+            prase_tlustejsi.Vypis();
+            Console.WriteLine("     ");
+
+            prase_nejtlustejsi.Zvuk();
+            prase_nejtlustejsi.Prejmenuj();
+            prase_nejtlustejsi.Vypis();
+            Console.WriteLine("     ");
+
+            ovce_male.Zvuk();
+            ovce_male.Prejmenuj();
+            ovce_male.Vypis();
+            Console.WriteLine("     ");
+
+            ovce_vetsi.Zvuk();
+            ovce_vetsi.Prejmenuj();
+            ovce_vetsi.Vypis();
+            Console.WriteLine("     ");
+
+            ovce_nejvetsi.Zvuk();
+            ovce_nejvetsi.Prejmenuj();
+            ovce_nejvetsi.Vypis();
+            Console.WriteLine("     ");
+
+
+
+
+
+
+
+
+
+
+        }
+    }
+}
